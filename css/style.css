@@ -1,1 +1,51 @@
-body{font-family:'Poppins', sans-serif}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Poppins', sans-serif; }
+
+.fundacion-menu {
+  -webkit-box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
+  box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 80px;
+  height: 80px; }
+
+.fundacion-logo {
+  width: 30%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.fundacion-nav {
+  width: 70%;
+  height: 100%; }
+  .fundacion-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-transform: uppercase; }
+  .fundacion-nav ul li {
+    display: inline;
+    font-weight: 500;
+    font-size: 12px;
+    margin: 0 20px; }
+    .fundacion-nav ul li a {
+      color: #000;
+      text-decoration: none; }
