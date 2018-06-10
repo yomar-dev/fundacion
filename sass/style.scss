@@ -272,3 +272,60 @@ a{
 		}
 	}
 }
+
+.fundacion-articulos-recientes{
+	background: #f9f9ff;
+}
+
+.fundacion-articulos-recientes .info{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 280px;
+	text-align: center;
+
+	.titulo-info{
+		color: #222;
+		font-size: 2.7em;
+		font-weight: 600;
+	}
+
+	.descripcion-info{
+		color: #777;		
+		font-weight: 200;
+		width: 70%;
+	}
+}
+
+.articulos{
+	display: grid;
+	grid-template-columns: repeat(3, 30%);
+	justify-content: space-evenly;
+	padding-bottom: 80px;
+
+	.img-articulo{
+		transition: all .5s;
+	}
+
+	.img-articulo:hover{
+		cursor: pointer;
+		transform: scale(1.04);
+		opacity: .4;
+		transition: all .5s;
+	}
+
+	.titulo-articulo{
+		margin: 20px 0;
+		text-transform: uppercase;
+		font-size: 1.3em;
+		font-weight: 500;
+		line-height: 1;
+	}
+
+	.descripcion-articulo{
+		color: #777;
+		font-size: .9em;
+		font-weight: 200;
+	}
+}
