@@ -132,3 +132,55 @@ a {
         font-size: .9em;
         font-weight: 200;
         line-height: 1.5; }
+
+.fundacion-contacto {
+  display: grid;
+  grid-template: 480px / 1fr 1fr; }
+  .fundacion-contacto .contacto-imagen .imagen-formulario {
+    width: 100%;
+    height: 480px; }
+  .fundacion-contacto .contacto-formulario {
+    background: #222;
+    color: #fff;
+    padding: 3em; }
+    .fundacion-contacto .contacto-formulario .titulo-formulario {
+      margin-bottom: 20px;
+      font-size: 1.5em;
+      font-weight: 500;
+      text-align: center; }
+    .fundacion-contacto .contacto-formulario input, .fundacion-contacto .contacto-formulario textarea {
+      background: #222;
+      border: 1px solid #656463;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 100;
+      margin-bottom: 20px;
+      padding: 15px; }
+    .fundacion-contacto .contacto-formulario input:focus, .fundacion-contacto .contacto-formulario textarea:focus {
+      outline: none; }
+    .fundacion-contacto .contacto-formulario textarea {
+      width: 100%; }
+    .fundacion-contacto .contacto-formulario .input-full {
+      height: 40px;
+      width: 100%; }
+    .fundacion-contacto .contacto-formulario .medium {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .fundacion-contacto .contacto-formulario .medium .input-medium {
+        height: 40px;
+        width: 48%; }
+      .fundacion-contacto .contacto-formulario .medium .input-medium:first-child {
+        margin-right: 4%; }
+    .fundacion-contacto .contacto-formulario .btn-contacto {
+      background-image: -webkit-linear-gradient(0deg, #2380ff 0%, #52fdd9 100%);
+      border: none;
+      border-radius: 20px;
+      color: #fff;
+      font-size: 1em;
+      padding: 10px 30px; }
+    .fundacion-contacto .contacto-formulario .btn-contacto:hover {
+      cursor: pointer; }
