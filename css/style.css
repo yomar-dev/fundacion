@@ -176,7 +176,10 @@ a {
       .fundacion-contacto .contacto-formulario .medium .input-medium:first-child {
         margin-right: 4%; }
     .fundacion-contacto .contacto-formulario .btn-contacto {
-      background-image: -webkit-linear-gradient(0deg, #2380ff 0%, #52fdd9 100%);
+      background-image: -webkit-gradient(linear, left bottom, left top, from(#2380ff), to(#52fdd9));
+      background-image: -webkit-linear-gradient(bottom, #2380ff 0%, #52fdd9 100%);
+      background-image: -o-linear-gradient(bottom, #2380ff 0%, #52fdd9 100%);
+      background-image: linear-gradient(0deg, #2380ff 0%, #52fdd9 100%);
       border: none;
       border-radius: 20px;
       color: #fff;
