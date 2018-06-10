@@ -105,3 +105,30 @@ a {
   width: 50%; }
   .banner-image img {
     width: 100%; }
+
+.fundacion-servicios {
+  display: grid;
+  grid-template: 200px 200px 200px / 40% 40%;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  padding: 100px 0; }
+  .fundacion-servicios .servicio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .fundacion-servicios .servicio .servicio-icono {
+      color: #777;
+      width: 10%; }
+    .fundacion-servicios .servicio .servicio-descripcion {
+      padding-left: 10px;
+      width: 90%; }
+      .fundacion-servicios .servicio .servicio-descripcion .servicio-titulo {
+        color: #333;
+        margin-bottom: 15px;
+        text-transform: uppercase; }
+      .fundacion-servicios .servicio .servicio-descripcion .servicio-informacion {
+        color: #777;
+        font-size: .9em;
+        font-weight: 200;
+        line-height: 1.5; }
