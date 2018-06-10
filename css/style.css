@@ -187,3 +187,41 @@ a {
       padding: 10px 30px; }
     .fundacion-contacto .contacto-formulario .btn-contacto:hover {
       cursor: pointer; }
+
+.fundacion-consultores {
+  background: #f9f9ff; }
+
+.fundacion-consultores .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 280px;
+  text-align: center; }
+  .fundacion-consultores .info .titulo-info {
+    color: #222;
+    font-size: 2.7em;
+    font-weight: 600; }
+  .fundacion-consultores .info .descripcion-info {
+    color: #777;
+    font-weight: 200;
+    width: 70%; }
+
+.imagen-consultores {
+  display: grid;
+  grid-template-columns: 22% 22% 22% 22%;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  padding-bottom: 80px; }
+  .imagen-consultores img {
+    border: 1px solid #ccc; }
