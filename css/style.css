@@ -218,10 +218,32 @@ a {
 
 .imagen-consultores {
   display: grid;
-  grid-template-columns: 22% 22% 22% 22%;
+  grid-template-columns: repeat(4, 22%);
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   padding-bottom: 80px; }
   .imagen-consultores img {
     border: 1px solid #ccc; }
+
+.fundacion-contadores {
+  display: grid;
+  grid-template-columns: repeat(4, 22%);
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 300px; }
+  .fundacion-contadores .contador span {
+    display: block;
+    text-align: center; }
+  .fundacion-contadores .contador .cantidad {
+    color: #2380ff;
+    font-size: 48px;
+    font-weight: 600; }
+  .fundacion-contadores .contador .descripcion {
+    font-size: 24px;
+    font-weight: 100;
+    color: #000; }
