@@ -329,3 +329,17 @@ a{
 		font-weight: 200;
 	}
 }
+
+.fundacion-footer{
+	background: #222;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 150px;
+	font-size: 1.4em;
+
+	a{
+		color: #2380ff;
+	}
+}
