@@ -293,6 +293,19 @@ section.info{
 	}
 }
 
+.fundacion-footer{
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: $bg-form;
+	height: 70px;
+
+	a{
+		color: teal;
+	}
+}
+
 
 
 // Small devices (landscape phones, 576px and up)
