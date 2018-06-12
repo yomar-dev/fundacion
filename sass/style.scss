@@ -238,6 +238,39 @@ section.info{
 	}
 }
 
+.fundacion-consultores{
+	padding: .5em;
+}
+
+.fundacion-contadores{
+	display: grid;
+	grid-template: 120px 120px / 1fr 1fr;
+
+	.contador{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.cantidad,
+	.descripcion{
+		display: block;
+		text-align: center;
+	}
+
+	.cantidad{
+		color: $color-titulo;
+		font-size: $fs-titulo-banner+10;
+		font-weight: 700;
+	}
+
+	.descripcion{
+		color: $color-texto;
+		font-weight: 300;
+	}
+}
+
 
 
 // Small devices (landscape phones, 576px and up)
