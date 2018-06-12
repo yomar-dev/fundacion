@@ -37,6 +37,10 @@ img{
 	width: 100%;
 }
 
+li{
+	list-style: none;
+}
+
 .hide{
 	display: none;
 }
@@ -73,6 +77,9 @@ img{
 
 		a{
 			color: #fff;
+			&:visited{
+				color: #fff;
+			}
 		}
 
 		&:first-child{
@@ -330,6 +337,12 @@ section.info{
 		.servicio{
 			margin-bottom: 0;
 			padding: 2.5em;
+			display: grid;
+			grid-template-columns: 100px 1fr;
+
+			.servicio-icono{
+				display: block;
+			}
 
 			.servicio-titulo{
 				font-size: $fs-titulo-servicios+5;
@@ -356,9 +369,66 @@ section.info{
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-	.fundacion-menu{
-		background-color: red;
+	.hide{
+		display: block;
 	}
+
+	#open{
+		display: none;
+	}
+
+	.fundacion-menu{
+		display: grid;
+		grid-template-columns: 200px 1fr;
+
+		.fundacion-logo{
+			position: initial;
+		}
+
+		.fundacion-nav ul{
+			display: flex;
+			justify-content: flex-end;
+
+			li{
+				margin-right: 10px;
+				a{
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	.fundacion-banner{
+
+		.banner-image{
+			img{
+				height: 690px;
+			}
+		}
+	}
+
+	.info{
+		.descripcion-info{
+			padding: 0 5em;
+		}
+	}
+
+	.fundacion-articulos-recientes{
+		.articulos{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-gap: 15px;
+
+			.titulo-articulo{
+				font-size: .95em;
+			}
+
+			.descripcion-articulo{
+				font-size: .9em;
+			}
+		}
+	}
+
 }
 
 // Large devices (desktops, 992px and up)
