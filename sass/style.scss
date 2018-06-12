@@ -1,5 +1,18 @@
-$color-texto: #222;
+$color-texto: #777;
 $color-titulo: #2380ff;
+$fs-titulo-banner: 24px;
+$fs-texto: 16px;
+$color-texto: #aaa;
+$lh-texto: 1.4;
+$fw-texto: 100;
+
+@mixin btn($bg: $color-titulo, $fs: 18px, $br: 15px){
+	background-image: -webkit-linear-gradient(0deg, #2380ff 0%, #52fdd9 100%);
+	color: #fff;
+	font-size: $fs;
+	border-radius: $br;
+	display: inline-block;
+}
 
 *{
 	box-sizing: border-box;
@@ -13,6 +26,10 @@ body{
 
 a{
 	text-decoration: none;
+}
+
+img{
+	width: 100%;
 }
 
 .hide{
@@ -77,6 +94,45 @@ a{
 		/*display: none;*/
 	}
 }
+
+.fundacion-banner{
+	padding: .5em;
+}
+
+.fundacion-banner{
+	.banner-titulo{
+		color: $color-titulo;
+		font-size: $fs-titulo-banner;
+	}
+
+	.banner-descripcion{
+		color: $color-texto;
+		font-size: $fs-texto;
+		font-weight: $fw-texto;
+		line-height: $lh-texto;
+		margin: 30px 0;
+	}
+
+	.banner-image{
+		img{
+			height: 380px;
+		}
+	}
+
+	.banner-btn{
+		display: flex;
+		justify-content: center;
+		margin: 20px 0;
+		a{
+			@include btn;
+			width: 200px;
+			padding: .5em;
+			text-align: center;
+		}
+	}
+}
+
+
 
 
 // Small devices (landscape phones, 576px and up)
