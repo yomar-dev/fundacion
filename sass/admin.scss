@@ -1,0 +1,55 @@
+$fs-titulo: 18px;
+$fs-input: 14px;
+
+@mixin btn($fs-btn: 20px){
+	background-image: linear-gradient(0deg, #2380ff 0%, #52fdd9 100%);
+	font-size: $fs-btn;
+	color: #fff;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+.login-container{
+	background: #222;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.login-titulo{
+	color: #fff;
+}
+
+.form-login{
+	background: #ccc;
+	border-radius: 5px;
+	padding: 1em;
+	width: 400px;
+
+	input{
+		border-radius: 5px;
+		border: none;
+		outline: none;
+		width: 100%;
+		margin: 10px 0;
+		height: 40px;
+		font-size: $fs-input;
+		padding: 10px;
+	}
+
+	input[type="submit"]{
+		@include btn;
+		cursor: pointer;
+		height: 50px;
+	}
+}
