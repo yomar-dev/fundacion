@@ -1,4 +1,3 @@
-$color-texto: #777;
 $color-titulo: #2380ff;
 $fs-titulo-banner: 24px;
 $fs-texto: 15px;
@@ -197,7 +196,7 @@ img{
 			font-weight: $fw-texto;
 			margin: 0 auto;
 			margin-bottom: 15px;
-			padding: .5em;
+			padding: 1em;
 			outline: none;
 			width: 90%;
 		}
@@ -212,6 +211,30 @@ img{
 			padding: .5em 3em;
 			margin: 0 auto;
 		}
+	}
+}
+
+section.info{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+	margin: .5em;
+	padding: .5em;
+	background: #ccc;
+
+	.titulo-info{
+		color: #333;
+		font-size: $fs-titulo-banner;
+		font-weight: 600;
+		line-height: 2.5;
+	}
+	.descripcion-info{
+		color: #444;
+		font-size: $fs-texto;
+		font-weight: $fw-texto+100;
+		line-height: $lh-texto;
 	}
 }
 
