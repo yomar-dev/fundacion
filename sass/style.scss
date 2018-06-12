@@ -1,4 +1,4 @@
-$color-titulo: #2380ff;
+$color-titulo-principal: #017AE9;
 $fs-titulo-banner: 24px;
 $fs-texto: 15px;
 $color-texto: #aaa;
@@ -56,7 +56,7 @@ img{
 	position: fixed;
 	min-height: 100vh;
 	width: 100%;
-	background: rgba($color-titulo, .9);
+	background: rgba($color-titulo-principal, .9);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -90,8 +90,8 @@ img{
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background: $color-titulo;
-		background: rgba($color-titulo, .4);
+		background: $color-titulo-principal;
+		background: rgba($color-titulo-principal, .4);
 		font-size: 1.5em;
 		height: 70px;
 		position: fixed;
@@ -100,10 +100,6 @@ img{
 
 	.fundacion-nav{
 		text-align: center;
-	}
-
-	.fundacion-nav ul{
-		/*display: none;*/
 	}
 }
 
@@ -115,7 +111,7 @@ img{
 
 .fundacion-banner{
 	.banner-titulo{
-		color: $color-titulo;
+		color: $color-titulo-principal;
 		font-size: $fs-titulo-banner;
 	}
 
@@ -261,7 +257,7 @@ section.info{
 	}
 
 	.cantidad{
-		color: $color-titulo;
+		color: $color-titulo-principal;
 		font-size: $fs-titulo-banner+10;
 		font-weight: 700;
 	}
