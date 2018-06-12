@@ -5,12 +5,17 @@ $fs-texto: 15px;
 $color-texto: #aaa;
 $lh-texto: 1.4;
 $fw-texto: 100;
+$fs-titulo-servicios: 20px;
+$fs-texto-servicios: 13px;
+$color-titulo-servicios: #444;
+$bg-form: #222;
 
-@mixin btn($bg: $color-titulo, $fs: 18px, $br: 15px){
+@mixin btn($fs: 18px, $br: 15px){
 	background-image: -webkit-linear-gradient(0deg, #2380ff 0%, #52fdd9 100%);
 	color: #fff;
 	font-size: $fs;
 	border-radius: $br;
+	border: none;
 	display: inline-block;
 }
 
@@ -86,6 +91,7 @@ img{
 		justify-content: center;
 		align-items: center;
 		background: $color-titulo;
+		background: rgba($color-titulo, .4);
 		font-size: 1.5em;
 		height: 70px;
 		position: fixed;
@@ -101,7 +107,9 @@ img{
 	}
 }
 
-.fundacion-banner{
+.fundacion-banner,
+.fundacion-servicios,
+.fundacion-contacto{
 	padding: .5em;
 }
 
@@ -138,6 +146,74 @@ img{
 	}
 }
 
+
+.fundacion-servicios{
+
+	.servicio{
+		margin-bottom: 45px;
+	}
+
+	.servicio-icono{
+		display: none;
+	}
+
+	.servicio-titulo{
+		color: $color-titulo-servicios;
+		font-size: $fs-titulo-servicios;
+		margin-bottom: 15px;
+	}
+
+	.servicio-informacion{
+		color: $color-texto;
+		font-size: $fs-texto;
+		font-weight: $fw-texto;
+		line-height: $lh-texto;
+	}
+}
+
+.fundacion-contacto{
+	.contacto-imagen{
+		display: none;
+	}
+
+	.contacto-formulario{
+		background: $bg-form;
+		padding: 20px 0;
+
+		.titulo-formulario{
+			font-size: $fs-titulo-banner;
+			color: #fff;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+	}
+
+	.formulario{
+		.input, .message{
+			background: $bg-form;
+			border: .2px solid $color-texto;
+			color: #fff;
+			display: block;
+			font-weight: $fw-texto;
+			margin: 0 auto;
+			margin-bottom: 15px;
+			padding: .5em;
+			outline: none;
+			width: 90%;
+		}
+		.input{
+			height: 25px;
+		}
+
+		.btn-contacto{
+			@include btn(14px);
+			cursor: pointer;
+			display: block;
+			padding: .5em 3em;
+			margin: 0 auto;
+		}
+	}
+}
 
 
 
