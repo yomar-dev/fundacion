@@ -89,6 +89,7 @@ li{
 }
 
 .fundacion-menu{
+	background: $color-titulo-principal;
 	align-items: center;
 	height: 70px;
 
@@ -98,7 +99,6 @@ li{
 		justify-content: center;
 		align-items: center;
 		background: $color-titulo-principal;
-		background: rgba($color-titulo-principal, .4);
 		font-size: 1.5em;
 		height: 70px;
 		position: fixed;
@@ -312,9 +312,6 @@ section.info{
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-	.fundacion-menu{
-		background-color: green;
-	}
 
 	.fundacion-banner{
 		.banner-titulo{
@@ -433,16 +430,75 @@ section.info{
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-	.fundacion-menu{
-		background-color: teal;
+
+	.fundacion-banner{
+		display: grid;
+		grid-template: 200px 400px 90px / 1fr 1fr 1fr;
+		grid-template-areas: "banner-contenido banner-image banner-image"
+							 "banner-contenido banner-image banner-image"
+							 "banner-btn banner-image banner-image";
 	}
+
+	.banner-contenido{
+		grid-area: banner-contenido;
+
+		.banner-titulo{
+			font-size: $fs-titulo-banner;
+		}
+	}
+
+	.banner-image{
+		grid-area: banner-image;
+	}
+
+	.banner-btn{
+		grid-area: banner-btn;
+
+		a{
+			line-height: 30px;
+		}
+	}
+
+	.fundacion-servicios{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.fundacion-contacto{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		.contacto-imagen{
+			display: block;
+
+			img{
+				min-height: 450px;
+				max-height: 450px;
+				width: 100%;
+			}
+		}
+
+		.contacto-formulario{
+			min-height: 450px;
+			max-height: 450px;
+		}
+	}
+	
+	.fundacion-consultores{
+		.imagen-consultores{
+			display: grid;
+			grid-template: 300px / 1fr 1fr 1fr 1fr;
+		}	
+	}
+
+	.fundacion-contadores{
+		display: grid;
+		grid-template: 120px / 1fr 1fr 1fr 1fr;
+	}
+	
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-	.fundacion-menu{
-		background-color: skyblue;
-	}
 }
 
 /*.fundacion-menu{
