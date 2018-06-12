@@ -142,7 +142,6 @@ img{
 	}
 }
 
-
 .fundacion-servicios{
 
 	.servicio{
@@ -308,6 +307,50 @@ section.info{
 @media (min-width: 576px) {
 	.fundacion-menu{
 		background-color: green;
+	}
+
+	.fundacion-banner{
+		.banner-titulo{
+			font-size: $fs-titulo-banner+5;
+		}
+
+		.banner-descripcion{
+			font-size: $fs-texto+2;
+			line-height: $lh-texto;
+		}
+
+		.banner-image{
+			img{
+				height: 480px;
+			}
+		}
+	}
+
+	.fundacion-servicios{
+		.servicio{
+			margin-bottom: 0;
+			padding: 2.5em;
+
+			.servicio-titulo{
+				font-size: $fs-titulo-servicios+5;
+			}
+
+			.servicio-informacion{
+				font-size: $fs-texto+2;
+			}
+		}
+	}
+
+	.fundacion-consultores{
+		.imagen-consultores{
+			display: grid;
+			grid-template: 300px 300px / 1fr 1fr;
+			grid-gap: 10px;
+
+			img{
+				height: 100%;
+			}
+		}
 	}
 }
 
