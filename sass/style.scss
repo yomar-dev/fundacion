@@ -1,7 +1,7 @@
 $color-texto: #777;
 $color-titulo: #2380ff;
 $fs-titulo-banner: 24px;
-$fs-texto: 16px;
+$fs-texto: 15px;
 $color-texto: #aaa;
 $lh-texto: 1.4;
 $fw-texto: 100;
@@ -37,7 +37,7 @@ img{
 }
 
 #open, #close{
-	color: $color-titulo;
+	color: #fff;
 	position: fixed;
 	top: 20px;
 	right: 10px;
@@ -47,19 +47,18 @@ img{
 	display: none;
 }
 
-
 .nav-menu{
-	position: absolute;
+	position: fixed;
 	min-height: 100vh;
 	width: 100%;
-	background: rgba($color-titulo, .5);
+	background: rgba($color-titulo, .9);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 
 	li{
-		background: rgba($color-titulo, .3);
+		border-bottom: 1px solid #fff;
 		list-style: none;
 		font-size: 1.3em;
 		width: 100%;
@@ -70,19 +69,26 @@ img{
 		a{
 			color: #fff;
 		}
+
+		&:first-child{
+			border-top: 1px solid #fff;
+		}
 	}
 }
 
 .fundacion-menu{
 	align-items: center;
+	height: 70px;
 
 	.fundacion-logo{
+		color: #fff;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background: rgba(red, .2);
+		background: $color-titulo;
 		font-size: 1.5em;
 		height: 70px;
+		position: fixed;
 		width: 100%;
 	}
 
