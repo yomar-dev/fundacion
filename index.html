@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Fundación</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -12,18 +13,21 @@
 	<div class="container">
 		<div class="fundacion-menu">
 			<div class="fundacion-logo">
-				Logo Fundación
+				Fundación
 			</div>
 			<nav class="fundacion-nav">
-				<ul>
-					<li><a href="#">Inicio</a></li>
-					<li><a href="#">Servicios</a></li>
-					<li><a href="#">Consultores</a></li>
-					<li><a href="#">Designación</a></li>
+				<ul class="hide">
+					<li class="menu-item"><a href="#">Inicio</a></li>
+					<li class="menu-item"><a href="#">Servicios</a></li>
+					<li class="menu-item"><a href="#">Consultores</a></li>
+					<li class="menu-item"><a href="#">Designación</a></li>
 				</ul>
+
+				<i id="open" class="fas fa-bars fa-2x"></i>
+				<i id="close" class="fas fa-times fa-2x"></i>
 			</nav>
 		</div>
-
+	<!--
 		<div class="fundacion-banner">
 			<div class="banner-contenido">
 				<h1 class="banner-titulo">Rattage panelation astony unnucleated incompetent</h1>
@@ -248,6 +252,11 @@
 		<div class="fundacion-footer">
 			<span>Created by: <a href="#">Barbers Cloud SAS</a></span>
 		</div>
+
+	-->
 	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/core.js"></script>
 </body>
 </html>

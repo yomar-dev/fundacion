@@ -1,3 +1,6 @@
+$color-texto: #222;
+$color-titulo: #2380ff;
+
 *{
 	box-sizing: border-box;
 	margin: 0;
@@ -12,7 +15,99 @@ a{
 	text-decoration: none;
 }
 
+.hide{
+	display: none;
+}
+
+#open, #close{
+	color: $color-titulo;
+	position: fixed;
+	top: 20px;
+	right: 10px;
+}
+
+#close{
+	display: none;
+}
+
+
+.nav-menu{
+	position: absolute;
+	min-height: 100vh;
+	width: 100%;
+	background: rgba($color-titulo, .5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	li{
+		background: rgba($color-titulo, .3);
+		list-style: none;
+		font-size: 1.3em;
+		width: 100%;
+		padding: 20px;
+		margin-bottom: 2px;
+		text-transform: uppercase;
+
+		a{
+			color: #fff;
+		}
+	}
+}
+
 .fundacion-menu{
+	align-items: center;
+
+	.fundacion-logo{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: rgba(red, .2);
+		font-size: 1.5em;
+		height: 70px;
+		width: 100%;
+	}
+
+	.fundacion-nav{
+		text-align: center;
+	}
+
+	.fundacion-nav ul{
+		/*display: none;*/
+	}
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+	.fundacion-menu{
+		background-color: green;
+	}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+	.fundacion-menu{
+		background-color: red;
+	}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+	.fundacion-menu{
+		background-color: teal;
+	}
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+	.fundacion-menu{
+		background-color: skyblue;
+	}
+}
+
+/*.fundacion-menu{
 	box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.5);
 	display: flex;
 	padding: 0 80px;
@@ -342,4 +437,33 @@ a{
 	a{
 		color: #2380ff;
 	}
+}*/
+
+
+/*// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) { 
+	.fundacion-menu{
+		background: green;
+	}
 }
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) { 
+	.fundacion-menu{
+		background: red;
+	}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) { 
+	.fundacion-menu{
+		background: teal;
+	}
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) { 
+	.fundacion-menu{
+		background: skyblue;
+	}
+}*/
